@@ -1,0 +1,56 @@
+
+.car{
+    margin-top:300px;
+    margin-left:100px;
+    width:180px;
+    animation: go 10s infinite linear;
+}
+body{
+    background-repeat:no-repeat;
+    background-size: 100% 500px;
+    display:flex;
+    padding:15px;
+}
+.tyre{
+    margin-left:-40px;
+    margin-top:365px;
+}
+.tyre2{
+    margin-left: -150px;
+    margin-top:365px;
+    border-radius: 50px;
+}
+.tyre2,.tyre{
+   animation: rotate 0.5s infinite linear;
+   animation: go 1 infinite linear;
+}
+.tree{
+     margin-top:128px;
+     animation: move 0.5s infinite linear;
+     
+     z-index: -1;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }   
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes move{
+    from{
+        transform:translateX(300px);
+    }
+    to{
+        transform: translate(-300px);
+    }
+}
+@keyframes go{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(900px);
+    }
+}
